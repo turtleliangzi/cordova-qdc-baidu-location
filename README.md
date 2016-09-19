@@ -24,7 +24,7 @@ __此插件就这么诞生了__
 ####二，安装插件
 
 ```
-ionic plugin add https://github.com/mrwutong/cordova-qdc-baidu-location --variable API_KEY="<API_KEY>"
+ionic plugin add https://github.com/liangzhenghui/cordova-qdc-baidu-location --variable API_KEY="<API_KEY>"
 **注：此处的API_KEY来自于第一步，不带左右尖括号**
 ```
 

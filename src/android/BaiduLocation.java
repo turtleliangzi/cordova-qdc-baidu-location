@@ -121,7 +121,7 @@ public class BaiduLocation extends CordovaPlugin {
     //            }
                 LOG.i(LOG_TAG, sb.toString());
 
-                PluginResult pluginResult = new PluginResult(PluginResult.Status.OK, json);
+                PluginResult pluginResult = new PluginResult(PluginResult.Status.OK, json.toString());
                 pluginResult.setKeepCallback(true);
                 cbCtx.sendPluginResult(pluginResult);
             } catch (JSONException e) {
@@ -180,7 +180,7 @@ public class BaiduLocation extends CordovaPlugin {
         // 可选，默认0，即仅定位一次，设置发起定位请求的间隔需要大于等于1000ms才是有效的
         // option.setScanSpan(0);
         // 可选，设置是否需要地址信息，默认不需要
-        // option.setIsNeedAddress(false);
+        option.setIsNeedAddress(true);
         // 可选，默认false,设置是否使用gps
         option.setOpenGps(true);
         // 可选，默认false，设置是否当gps有效时按照1S1次频率输出GPS结果
